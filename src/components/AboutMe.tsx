@@ -1,13 +1,15 @@
 import { Card } from "antd"
-
+import { useTranslation } from 'react-i18next';
 
 const AboutMe = () => {
+    const [t, i18n ] = useTranslation();
+
     return (
         <>
             <Card className="sidebar lg:col-span-5 md:col-span-1 sm:col-span-1 ...">
                 <div className="content-area">
                     <section className="content" id="about">
-                        <h1>Ricardo A. Gloria Picazzo</h1>
+                        <h1>Ricardo A. Gloria Picazzo {t('Welcome to React')}</h1>
                         <h2>About me ...</h2>
                         <p>
                             I am a mathematics PhD student with a Research Assistant position at the University of Houston under the supervision of Dr. <a href="https://www.yingyingwu.io/" target="_blank">Yingying Wu</a>. My interests revolve around (discrete) differential geometry, (numerical) differential equations, differential and applied topology, discrete exterior calculus and their applications to geometry processing and machine learning.

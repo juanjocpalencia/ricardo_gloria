@@ -1,6 +1,9 @@
 const EsEs = {
     translation: {
-        "Welcome to React": "Bienvenido"
+        "HeaderAbout": "Sobre mí",
+        "HeaderResearch":"Investigacion",
+        "HeaderCv":"CV",
+        "HeaderLang":"Cambiar a Inglés"
     }
 }
 

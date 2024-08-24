@@ -1,6 +1,9 @@
 const EnUs = {
     translation: {
-        "Welcome to React": "Welcome to React and react-i18next"
+        "HeaderAbout": "About Me",
+        "HeaderResearch":"Research",
+        "HeaderCv":"CV",
+        "HeaderLang":"Change to Spanish"
     }
 }
 

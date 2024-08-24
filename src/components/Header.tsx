@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MailOutlined } from '@ant-design/icons';
+import { BookOutlined, FilePdfOutlined, GlobalOutlined, MailOutlined, UserOutlined } from '@ant-design/icons';
 import type { MenuProps } from 'antd';
 import { Menu } from 'antd';
 import { useTranslation } from 'react-i18next';
@@ -20,30 +20,30 @@ var GetItems = () => {
         {
             key: 'AboutMe',
             label: (
-                <a href="#about">About me </a>
+                <a href="#about">{t('HeaderAbout')}  </a>
             ),
-            icon: <MailOutlined />,
+            icon: <UserOutlined />,
         },
         {
             key: 'Research',
             label: (
-                <a href="#research">Research</a>
+                <a href="#research">{t('HeaderResearch')}</a>
             ),
-            icon: <MailOutlined />,
+            icon: <BookOutlined />,
         },
         {
             key: 'CV',
             label: (
-                <a href="files/CV_RicardoGloria2024.pdf" target="_blank">CV</a>
+                <a href="files/CV_RicardoGloria2024.pdf" target="_blank">{t('HeaderCv')} </a>
             ),
-            icon: <MailOutlined />,
+            icon: <FilePdfOutlined />,
         },
         {
             key: 'spanish',
             label: (
-                <a onClick={changeLanguage} > Versión en Español </a >
+                <a onClick={changeLanguage} > {t('HeaderLang')} </a >
             ),
-            icon: <MailOutlined />,
+            icon: <GlobalOutlined />,
         },
     ];
     return result;

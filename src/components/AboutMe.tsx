@@ -2,33 +2,34 @@ import { Card } from "antd"
 import { useTranslation } from 'react-i18next';
 
 const AboutMe = () => {
-    const [t, i18n ] = useTranslation();
+    const [t, i18n] = useTranslation();
 
     return (
         <>
             <Card className="sidebar lg:col-span-5 md:col-span-1 sm:col-span-1 ...">
                 <div className="content-area">
                     <section className="content" id="about">
-                        <h1>Ricardo A. Gloria Picazzo </h1>
-                        <h2>About me ...</h2>
+                        <h1>{t('Name')} </h1>
+                        <h2>{t('AboutMeTitle')}</h2>
                         <p>
-                            I am a mathematics PhD student with a Research Assistant position at the University of Houston under the supervision of Dr. 
-                            <a href="https://www.yingyingwu.io/" target="_blank">Yingying Wu</a>.
-                            My interests revolve around (discrete) differential geometry, (numerical) differential equations, differential and applied topology, discrete exterior calculus and their applications to geometry processing and machine learning.
+                            {t('AboutMeP1')}
+                            <a href="https://www.yingyingwu.io/" target="_blank">{t('AboutMeLink1')}</a>
+                            {t('AboutMeP2')}
                         </p>
                         <p>
-                            I earned my bachelor's degree in Mathematical Computing at the 
-                            <a href="http://www.demat.ugto.mx/" target="_blank">University of Guanajuato</a> / 
-                            <a href="https://www.cimat.mx/" target="_blank">CIMAT</a>. 
-                            During my undergraduate studies I was part of some summer programs as a fellow such as 
-                            <a href="https://sph.umich.edu/bdsi/" target="_blank">Big Data Summer Institute </a> 
-                            2022 (University of Michigan), 
-                            <a href="https://sgi.mit.edu/" target="_blank">Summer Geometry Initiative</a> 
-                            (Massachusetts Institute of Technology) and 
-                            <a href="https://www.umalca.org/" target="_blank">EMALCA</a> (Escuela de Matemáticas de América Latina y el Caribe).
+                            {t('AboutMeP3')}
+                            <a href="http://www.demat.ugto.mx/" target="_blank">{t('AboutMeLink2')}</a> /
+                            <a href="https://www.cimat.mx/" target="_blank">{t('AboutMeLink3')}</a>
+                            {t('AboutMeP4')}
+                            <a href="https://sph.umich.edu/bdsi/" target="_blank">{t('AboutMeLink4')}</a>
+                            {t('AboutMeP5')}
+                            <a href="https://sgi.mit.edu/" target="_blank">{t('AboutMeLink5')}</a>
+                            {t('AboutMeP6')}
+                            <a href="https://www.umalca.org/" target="_blank">{t('AboutMeLink6')}</a> 
+                            {t('AboutMeP7')}
                         </p>
                         <p>
-                            In my spare time I enjoy playing soccer and watching films. From time to time I also like playing the guitar and reading latinoamerican literature.
+                        {t('AboutMeP8')}
                         </p>
                     </section>
                 </div>
